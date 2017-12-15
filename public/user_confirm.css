@@ -1,11 +1,11 @@
-form{
-    margin: 0 auto;
+.content{
+   margin: 0 auto;
     width: 300px;
     padding: 2em;
     border: 1px solid #CCC;
     border-radius: 1em;
 }
-label {
+p {
     /* すべてのラベルを同じサイズにして、きちんと揃える */
     display: inline-block;
     width: 90px;
@@ -14,14 +14,3 @@ label {
 }
 h1{
     margin: 0 auto;
-}
-form div {
-    margin-top: 1em;
-}
-.content{
-   margin: 0 auto;
-    width: 300px;
-    padding: 2em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-}

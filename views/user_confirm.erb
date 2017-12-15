@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="users.css">
+        <link rel="stylesheet" type="text/css" href="user_confirm.css">
     </head>
     <body>
         <div class = "content">
@@ -9,7 +10,7 @@
             <a href="/users">新規登録に戻る</a>
                 <p>お名前：<%=@name %></p>
                 <p>email：<%=@email %></p>
-                <p>password：<%=@password %></p>
+                <p>password：<%="*" *@password.length %></p>
         </div>
     </body>
 </html>
