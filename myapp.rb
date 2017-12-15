@@ -36,9 +36,22 @@ get '/users' do
     erb :form
 end
 
-post '/users' do
-    @email = params['email']
-    @password = params['password']
-    @name = params['name']
+get '/users/confirm' do
     erb :user_confirm
 end
+
+post '/users/confirm' do
+    @name = params['name']
+    @email = params['email']
+    @password = params['password']
+    erb :user_confirm
+        
+    if @name.empty?
+        redirect '/users'
+    else redirect '/users/confirm'  
+end
+end
+    
+   
+   
+
