@@ -44,12 +44,12 @@ post '/users/confirm' do
     @name = params['name']
     @email = params['email']
     @password = params['password']
-    erb :user_confirm
-        
-    if @name.empty?
+    
+    if @name.empty? || @email.empty? || @password.empty?
         redirect '/users'
-    else redirect '/users/confirm'  
 end
+    erb :user_confirm
+
 end
     
    
